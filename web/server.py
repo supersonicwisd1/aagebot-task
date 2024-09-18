@@ -9,7 +9,7 @@ class WebServer:
     def setup_routes(self):
         @self.app.route('/')
         def home():
-            return "Please visit the Telegram bot to get your link."
+            return "Please visit the Telegram bot (@UUIDTelegramBot) to get your link."
 
         @self.app.route('/link/<uuid>', methods=['GET'])
         def show_user(uuid):
